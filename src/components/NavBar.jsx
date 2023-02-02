@@ -15,7 +15,7 @@ const NavBar = () => {
     }
 
     return (
-        <nav className="flex justify-between w-10/12 m-auto py-10">
+        <nav className="flex justify-between w-10/12 m-auto py-10 items-center">
             <img src={Logo} alt=""/>
             <img src={Menu} alt="Menu" className="md:hidden" onClick={toggleSideBar}/>
             <div className="hidden md:flex justify-between w-10/12">
