@@ -16,6 +16,7 @@ const NavBar = () => {
       : document.querySelector(".toggleOpen").classList.add("hidden");
   };
 
+<<<<<<< HEAD
   return (
     <nav className="flex justify-between w-10/12 m-auto items-center h-24">
       <img src={Logo} alt="" />
@@ -40,6 +41,27 @@ const NavBar = () => {
           </button>
         </div>
       </div>
+=======
+    return (
+        <nav className="flex justify-between w-10/12 m-auto py-10 items-center">
+            <img src={Logo} alt=""/>
+            <img src={Menu} alt="Menu" className="md:hidden" onClick={toggleSideBar}/>
+            <div className="hidden md:flex justify-between w-10/12">
+                <div className="flex justify-between w-2/4">
+                    <a href="#home">Home</a>
+                    <a href="#whatisgpt">What is GPT?</a>
+                    <a href="#openai">Open AI</a>
+                    <a href="#casestudie">Case Studies</a>
+                    <a href="#library">Library</a>
+                </div>
+                <div className="flex justify-between w-1/5">
+                    <button className="">Sign In</button>
+                    <button className="bg-buttonBackground w-6/12 h-10 rounded">
+                        Sign Up
+                    </button>
+                </div>
+            </div>
+>>>>>>> 51ba26dc0a2b898f8749334f44ba261ceb3fde10
 
       <div
         ref={openRef}
